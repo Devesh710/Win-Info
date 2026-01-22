@@ -21,6 +21,8 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Nice Select CSS -->
@@ -46,6 +48,11 @@
 	<!-- Eduland Colors -->
 	<link rel="stylesheet" href="css/colors/color1.css">
 
+	<!-- Extra Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 
 <body>
@@ -59,7 +66,7 @@
 					<div class="col-lg-3 col-md-3 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="https://www.paraminfo.in/images/demo/567X101_logo.png" alt="#"></a>
+							<a href="index.html"><img src="images/logo.png" alt="#"></a>
 						</div>
 						<!--/ End Logo -->
 						<div class="mobile-menu"></div>
@@ -107,33 +114,32 @@
 
 	<!-- Slider Area -->
 	<section class="home-slider">
-		<div class="slider-active">
-			<!-- Single Slider -->
-			<div class="single-slider overlay">
-				<div class="slider-image" style="background-image:url('images/slider/slider-bg1.jpg')"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-7 col-md-10 col-12">
-							<!-- Slider Content -->
-							<div class="slider-content">
-								<h1 class="slider-title"><span>The Best University in the World!</span>Eduland Online
-									<b>University</b></h1>
-								<p class="slider-text">Mirum est notare quam littera gothica, quam nunc putamus parum
-									claram, anteposuerit litterarum formas humanitatis per seacula There are many
-									variations of passages of Lorem Ipsum available, but the majority</p>
-								<!-- Button -->
-								<div class="button">
-									<a href="about.html" class="btn white">About Eduland</a>
-									<a href="courses.html" class="btn white primary">Our Courses</a>
-								</div>
-								<!--/ End Button -->
-							</div>
-							<!--/ End Slider Content -->
-						</div>
-					</div>
+		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="slider-bg" style="background-image:url('/images/cta-bg.jpg')"></div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="slider-bg" style="background-image:url('/images/feature-bg.jpg')"></div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="slider-bg" style="background-image:url('/images/clients-bg.jpg')"></div>
 				</div>
 			</div>
-			<!--/ End Single Slider -->
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+
 		</div>
 	</section>
 	<!--/ End Slider Area -->
@@ -505,256 +511,212 @@
 
 	<!--/ End Call To Action -->
 	<!-- Faqs -->
-	<section class="faqs section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3 col-12">
-					<div class="section-title bg">
-						<h2>Frequently Asked <span>Questions</span></h2>
-						<p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay
-							own additions education satisfied the perpetual. If he cause manor happy</p>
-						<div class="icon"><i class="fa fa-question"></i></div>
+		<section class="faqs section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3 col-12">
+						<div class="section-title bg">
+							<h2>Frequently Asked <span>Questions</span></h2>
+							<p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy</p>
+							<div class="icon"><i class="fa fa-question"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 col-12">
+						<div class="faq-image">
+							<img src="images/faq.png" alt="#">
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<div class="faq-main">
+							<div class="faq-content">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<!-- Single Faq -->
+									<div class="panel panel-default">
+										<div class="faq-heading"  id="FaqTitle1">
+											<h4 class="faq-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq1"><i class="fa fa-question"></i>We have launches a new software house!</a>
+											</h4>
+										</div>
+										<div id="faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="FaqTitle1">
+											<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat</div>
+										</div>
+									</div>
+									<!--/ End Single Faq -->
+									<!-- Single Faq -->
+									<div class="panel panel-default active">
+										<div class="faq-heading"  id="FaqTitle2">
+											<h4 class="faq-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq2"><i class="fa fa-question"></i>Curabitur rhoncus commodo rutrum. Pellentesque</a>
+											</h4>
+										</div>
+										<div id="faq2" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="FaqTitle2">
+											<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat</div>
+										</div>
+									</div>
+									<!--/ End Single Faq -->
+									<!-- Single Faq -->
+									<div class="panel panel-default">
+										<div class="faq-heading"  id="FaqTitle3">
+											<h4 class="faq-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq3"><i class="fa fa-question"></i>Suspendisse facilisis ultricies tortor, nec sollicitudin</a>
+											</h4>
+										</div>
+										<div id="faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="FaqTitle3">
+											<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat</div>
+										</div>
+									</div>
+									<!--/ End Single Faq -->
+									<!-- Single Faq -->
+									<div class="panel panel-default">
+										<div class="faq-heading"  id="FaqTitle4">
+											<h4 class="faq-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq4"><i class="fa fa-question"></i>Tristique senectus et netus et malesuada fames ac turpis </a>
+											</h4>
+										</div>
+										<div id="faq4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="FaqTitle4">
+											<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat</div>
+										</div>
+									</div>
+									<!--/ End Single Faq -->
+									<!-- Single Faq -->
+									<div class="panel panel-default">
+										<div class="faq-heading"  id="FaqTitle5">
+											<h4 class="faq-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq5"><i class="fa fa-question"></i>Cras nulla orci, pharetra at dictum consequat</a>
+											</h4>
+										</div>
+										<div id="faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="FaqTitle5">
+											<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat</div>
+										</div>
+									</div>
+									<!--/ End Single Faq -->
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-5 col-12">
-					<div class="faq-image">
-						<img src="images/faq.png" alt="#">
+		</section>
+		<!--/ End Blogs -->
+		
+		<!-- Clients CSS -->
+		<div class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<div class="text-content">
+							<h4>Our Awesome Clients!</h4>
+							<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Et harum quidem</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-7 col-12">
-					<div class="faq-main">
-						<div class="faq-content">
-							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- Single Faq -->
-								<div class="panel panel-default">
-									<div class="faq-heading" id="FaqTitle1">
-										<h4 class="faq-title">
-											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-												href="#faq1"><i class="fa fa-question"></i>We have launches a new
-												software house!</a>
-										</h4>
-									</div>
-									<div id="faq1" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="FaqTitle1">
-										<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis
-											vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi
-											tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
-											nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci,
-											pharetra at dictum consequat</div>
-									</div>
-								</div>
-								<!--/ End Single Faq -->
-								<!-- Single Faq -->
-								<div class="panel panel-default active">
-									<div class="faq-heading" id="FaqTitle2">
-										<h4 class="faq-title">
-											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-												href="#faq2"><i class="fa fa-question"></i>Curabitur rhoncus commodo
-												rutrum. Pellentesque</a>
-										</h4>
-									</div>
-									<div id="faq2" class="panel-collapse collapse show" role="tabpanel"
-										aria-labelledby="FaqTitle2">
-										<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis
-											vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi
-											tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
-											nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci,
-											pharetra at dictum consequat</div>
-									</div>
-								</div>
-								<!--/ End Single Faq -->
-								<!-- Single Faq -->
-								<div class="panel panel-default">
-									<div class="faq-heading" id="FaqTitle3">
-										<h4 class="faq-title">
-											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-												href="#faq3"><i class="fa fa-question"></i>Suspendisse facilisis
-												ultricies tortor, nec sollicitudin</a>
-										</h4>
-									</div>
-									<div id="faq3" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="FaqTitle3">
-										<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis
-											vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi
-											tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
-											nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci,
-											pharetra at dictum consequat</div>
-									</div>
-								</div>
-								<!--/ End Single Faq -->
-								<!-- Single Faq -->
-								<div class="panel panel-default">
-									<div class="faq-heading" id="FaqTitle4">
-										<h4 class="faq-title">
-											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-												href="#faq4"><i class="fa fa-question"></i>Tristique senectus et netus
-												et malesuada fames ac turpis </a>
-										</h4>
-									</div>
-									<div id="faq4" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="FaqTitle4">
-										<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis
-											vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi
-											tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
-											nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci,
-											pharetra at dictum consequat</div>
-									</div>
-								</div>
-								<!--/ End Single Faq -->
-								<!-- Single Faq -->
-								<div class="panel panel-default">
-									<div class="faq-heading" id="FaqTitle5">
-										<h4 class="faq-title">
-											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-												href="#faq5"><i class="fa fa-question"></i>Cras nulla orci, pharetra at
-												dictum consequat</a>
-										</h4>
-									</div>
-									<div id="faq5" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="FaqTitle5">
-										<div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis
-											vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi
-											tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
-											nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci,
-											pharetra at dictum consequat</div>
-									</div>
-								</div>
-								<!--/ End Single Faq -->
+					<div class="col-lg-8 col-md-8 col-12">
+						<div class="client-slider">
+							<div class="single-slider">
+								<a href="#"><img src="images/client1.png" alt="#"></a>
+							</div>
+							<div class="single-slider">
+								<a href="#"><img src="images/client2.png" alt="#"></a>
+							</div>
+							<div class="single-slider">
+								<a href="#"><img src="images/client3.png" alt="#"></a>
+							</div>
+							<div class="single-slider">
+								<a href="#"><img src="images/client4.png" alt="#"></a>
+							</div>
+							<div class="single-slider">
+								<a href="#"><img src="images/client5.png" alt="#"></a>
+							</div>
+							<div class="single-slider">
+								<a href="#"><img src="images/client1.png" alt="#"></a>
+							</div>
+							<div class="single-slider">
+								<a href="#"><img src="images/client2.png" alt="#"></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--/ End Blogs -->
-
-	<!-- Clients CSS -->
-	<div class="clients">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-12">
-					<div class="text-content">
-						<h4>Our Universities!</h4>
-						<p>Learn with confidence through our academic collaborations with TMU and YCMU.</p>
-					</div>
-				</div>
-				<div class="col-lg-8 col-md-8 col-12">
-	<div class="client-slider">
-		<div class="single-slider">
-			<a href="https://www.tmv.edu.in/" target="_blank" rel="noopener noreferrer">
-				<img src="images/TMU_logo.png" alt="TMU University">
-			</a>
-		</div>
-		<div class="single-slider">
-			<a href="https://ycmou.digitaluniversity.ac/" target="_blank" rel="noopener noreferrer">
-				<img src="images/YCMU_logo.jpg" alt="YCMOU University">
-			</a>
-		</div>
-	</div>
-</div>
-
-			</div>
-		</div>
-	</div>
-	<!--/ End Clients CSS -->
-
-	<!-- Footer -->
-	<footer class="footer section">
-		<!-- Footer Top -->
-		<div class="footer-top overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- About -->
-						<div class="single-widget about">
-							<h2>About Eduland</h2>
-							<ul class="list">
-								<li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li>
-								<li><i class="fa fa-envelope"></i>Email: <a
-										href="mailto:info@youremail.com">Info@youremail.com</a></li>
-								<li><i class="fa fa-map-o"></i>Address: 123, Jolfikar state, Us</li>
-							</ul>
-							<!-- Social -->
-							<ul class="social">
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="active"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-							</ul>
-							<!-- End Social -->
+		<!--/ End Clients CSS -->
+		
+		<!-- Footer -->
+		<footer class="footer section">
+			<!-- Footer Top -->
+			<div class="footer-top overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- About -->
+							<div class="single-widget about">
+								<h2>About Eduland</h2>
+								<ul class="list">
+									<li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li>
+									<li><i class="fa fa-envelope"></i>Email: <a href="mailto:info@youremail.com">Info@youremail.com</a></li>
+									<li><i class="fa fa-map-o"></i>Address: 123, Jolfikar state, Us</li>
+								</ul>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li class="active"><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+							<!--/ End About -->
 						</div>
-						<!--/ End About -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Useful Links -->
-						<div class="single-widget list">
-							<h2>Useful Links</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="#">About Eduland</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="#">Our Courses</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="#">Upcoming Events</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="#">Faq's</a></li>
-							</ul>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Useful Links -->
+							<div class="single-widget list">
+								<h2>Useful Links</h2>
+								<ul>
+									<li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="#">About Eduland</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="#">Our Courses</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="#">Upcoming Events</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="#">Faq's</a></li>
+								</ul>
+							</div>
+							<!--/ End Useful Links -->
 						</div>
-						<!--/ End Useful Links -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Useful Links -->
-						<div class="single-widget opening-times">
-							<h2>Opening Hourse</h2>
-							<ul class="list">
-								<li><span>Saturday - Sunday</span>
-									<div class="value">09am - 05pm</div>
-								</li>
-								<li><span>Monday - Twisday</span>
-									<div class="value">10AM - 02PM</div>
-								</li>
-								<li><span>Widnesday</span>
-									<div class="value">10AM - 12PM</div>
-								</li>
-								<li><span>Thursday</span>
-									<div class="value">08AM - 05PM</div>
-								</li>
-								<li><span>Friday</span>
-									<div class="value off">closed</div>
-								</li>
-							</ul>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Useful Links -->
+							<div class="single-widget opening-times">
+								<h2>Opening Hourse</h2>
+								<ul class="list">
+									<li><span>Saturday - Sunday</span><div class="value">09am - 05pm</div></li>
+									<li><span>Monday - Twisday</span><div class="value">10AM - 02PM</div></li>
+									<li><span>Widnesday</span><div class="value">10AM - 12PM</div></li>
+									<li><span>Thursday</span><div class="value">08AM - 05PM</div></li>
+									<li><span>Friday</span><div class="value off">closed</div></li>
+								</ul>
+							</div>
+							<!--/ End Useful Links -->
 						</div>
-						<!--/ End Useful Links -->
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--/ End Footer Top -->
-		<!-- Footer Bottom -->
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<!-- Copyright -->
-						<div class="copyright">
-							<p>© Copyright Eduland 2019. Design & Development by <a
-									href="http://themelamp.com">www.themelamp.com</a>, Theme Release By <a
-									href="http://codeglim.com">www.codeglim.com</a></p>
+			<!--/ End Footer Top -->
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<!-- Copyright -->
+							<div class="copyright">
+								<p>© Copyright Eduland 2019. Design & Development by <a href="http://themelamp.com">www.themelamp.com</a>, Theme Release By <a href="http://codeglim.com">www.codeglim.com</a></p>
+							</div>
+							<!--/ End Copyright -->
 						</div>
-						<!--/ End Copyright -->
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--/ End Footer Bottom -->
-	</footer>
-	<!--/ End Footer -->
+			<!--/ End Footer Bottom -->
+		</footer>
+		<!--/ End Footer -->
 
 	<!--Floating Social Media bar-->
 	<section style="
@@ -844,15 +806,19 @@
 			}
 		</style>
 
-		<a href="https://wa.me/7718820320" target="_blank" rel="noopener noreferrer" class="wa-btn"
-			title="Chat on WhatsApp">
-			<!-- EMBEDDED OFFICIAL WHATSAPP ICON -->
-			<svg viewBox="0 0 32 32" aria-hidden="true">
-				<path
-					d="M16.02 2.004c-7.72 0-14 6.28-14 14 0 2.73.79 5.4 2.29 7.7L2 30l6.47-2.26a13.94 13.94 0 0 0 7.55 2.2h.01c7.72 0 14-6.28 14-14s-6.28-14-14-14zm0 25.57a11.6 11.6 0 0 1-5.92-1.63l-.42-.25-3.84 1.34 1.36-3.74-.27-.43a11.58 11.58 0 1 1 9.09 4.71zm6.37-8.7c-.35-.18-2.08-1.03-2.4-1.15-.32-.12-.56-.18-.8.18-.24.35-.92 1.15-1.12 1.38-.2.23-.4.26-.75.09-.35-.18-1.47-.54-2.8-1.72-1.03-.92-1.72-2.06-1.92-2.41-.2-.35-.02-.54.15-.71.16-.16.35-.4.52-.6.18-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.8-1.93-1.1-2.64-.29-.7-.58-.6-.8-.61h-.68c-.23 0-.6.09-.92.44-.32.35-1.2 1.18-1.2 2.88 0 1.7 1.23 3.34 1.4 3.57.18.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.56.23 2.15.14.65-.1 2.08-.85 2.38-1.67.29-.82.29-1.53.2-1.67-.09-.14-.32-.23-.67-.41z" />
-			</svg>
-		</a>
-	</section>
+  <a
+    href="https://wa.me/919999999999"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="wa-btn"
+    title="Chat on WhatsApp"
+  >
+    <!-- EMBEDDED OFFICIAL WHATSAPP ICON -->
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16.02 2.004c-7.72 0-14 6.28-14 14 0 2.73.79 5.4 2.29 7.7L2 30l6.47-2.26a13.94 13.94 0 0 0 7.55 2.2h.01c7.72 0 14-6.28 14-14s-6.28-14-14-14zm0 25.57a11.6 11.6 0 0 1-5.92-1.63l-.42-.25-3.84 1.34 1.36-3.74-.27-.43a11.58 11.58 0 1 1 9.09 4.71zm6.37-8.7c-.35-.18-2.08-1.03-2.4-1.15-.32-.12-.56-.18-.8.18-.24.35-.92 1.15-1.12 1.38-.2.23-.4.26-.75.09-.35-.18-1.47-.54-2.8-1.72-1.03-.92-1.72-2.06-1.92-2.41-.2-.35-.02-.54.15-.71.16-.16.35-.4.52-.6.18-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.8-1.93-1.1-2.64-.29-.7-.58-.6-.8-.61h-.68c-.23 0-.6.09-.92.44-.32.35-1.2 1.18-1.2 2.88 0 1.7 1.23 3.34 1.4 3.57.18.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.56.23 2.15.14.65-.1 2.08-.85 2.38-1.67.29-.82.29-1.53.2-1.67-.09-.14-.32-.23-.67-.41z"/>
+    </svg>
+  </a>
+</section>
 
 	<!--/Floating whatsapp logo-->
 
