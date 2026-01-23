@@ -22,12 +22,10 @@
 .carousel-control-next {
   background: none !important;
   border: none;
-  /* width: auto; */
-  
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: transparent;
-  filter: invert(1); /* makes arrow white */
+  filter: invert(1);
 }
