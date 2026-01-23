@@ -21,11 +21,11 @@
 .carousel-control-prev,
 .carousel-control-next {
   background: none !important;
-  width: auto;
+  border: none;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: transparent;
-  filter: invert(1); /* makes arrow white */
+  filter: invert(1);
 }
