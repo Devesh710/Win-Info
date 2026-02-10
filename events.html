@@ -315,6 +315,140 @@
 			<!--/ End Footer Bottom -->
 		</footer>
 		<!--/ End Footer -->
+
+		 <!--Floating Social Media bar-->
+    <section
+      style="
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+      "
+    >
+      <style>
+        .social-bar a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 42px;
+          height: 42px;
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+          transition: all 0.25s ease;
+        }
+
+        .social-bar a:hover {
+          width: 50px;
+        }
+
+        .fb {
+          background: #3b5998;
+        }
+
+        .yt {
+          background: #ff0000;
+        }
+
+        .ig {
+          background: #c7219d;
+        }
+
+        .ln {
+          background: #0077b5;
+        }
+
+        .wb {
+          background: #0b1f66;
+        }
+      </style>
+
+      <div class="social-bar">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          class="fb"
+          title="Facebook"
+          >f</a
+        >
+        <a href="https://youtube.com" target="_blank" class="yt" title="YouTube"
+          >▶</a
+        >
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ig"
+          title="Instagram"
+        >
+          <img src="images/instagram.png" alt="Instagram" class="social-icon" />
+        </a>
+
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          class="ln"
+          title="LinkedIn"
+          >in</a
+        >
+        <a
+          href="https://yourwebsite.com"
+          target="_blank"
+          class="wb"
+          title="Website"
+          >🌐</a
+        >
+      </div>
+    </section>
+    <!--/Floating Social Media bar-->
+
+    <!--Floating whatsapp logo-->
+    <section style="position: fixed; left: 20px; bottom: 20px; z-index: 9999">
+      <style>
+        .wa-btn {
+          width: 58px;
+          height: 58px;
+          background: #25d366;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+          transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+        }
+
+        .wa-btn:hover {
+          transform: scale(1.1);
+          box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+        }
+
+        .wa-btn svg {
+          width: 30px;
+          height: 30px;
+          fill: #fff;
+        }
+      </style>
+
+      <a
+        href="https://wa.me/7718820320"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="wa-btn"
+        title="Chat on WhatsApp"
+      >
+        <!-- EMBEDDED OFFICIAL WHATSAPP ICON -->
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path
+            d="M16.02 2.004c-7.72 0-14 6.28-14 14 0 2.73.79 5.4 2.29 7.7L2 30l6.47-2.26a13.94 13.94 0 0 0 7.55 2.2h.01c7.72 0 14-6.28 14-14s-6.28-14-14-14zm0 25.57a11.6 11.6 0 0 1-5.92-1.63l-.42-.25-3.84 1.34 1.36-3.74-.27-.43a11.58 11.58 0 1 1 9.09 4.71zm6.37-8.7c-.35-.18-2.08-1.03-2.4-1.15-.32-.12-.56-.18-.8.18-.24.35-.92 1.15-1.12 1.38-.2.23-.4.26-.75.09-.35-.18-1.47-.54-2.8-1.72-1.03-.92-1.72-2.06-1.92-2.41-.2-.35-.02-.54.15-.71.16-.16.35-.4.52-.6.18-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.8-1.93-1.1-2.64-.29-.7-.58-.6-.8-.61h-.68c-.23 0-.6.09-.92.44-.32.35-1.2 1.18-1.2 2.88 0 1.7 1.23 3.34 1.4 3.57.18.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.56.23 2.15.14.65-.1 2.08-.85 2.38-1.67.29-.82.29-1.53.2-1.67-.09-.14-.32-.23-.67-.41z"
+          />
+        </svg>
+      </a>
+    </section>
+
+    <!--/Floating whatsapp logo-->
 		
 		<!-- Jquery JS-->
         <script src="js/jquery.min.js"></script>
